@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog.css" class="rel">
+
+    
+</head>
+<body>
+    <div class="header">
+        <h1>My Blog</h1>
+        <input type="text" id="searchInput" placeholder="Search">
+    </div>
+    <div class="container">
+        <div class="blog-form">
+            <h2>Add a New Blog</h2>
+            <input type="text" id="title" placeholder="Title">
+            <textarea id="content" placeholder="Content"></textarea>
+            <input type="file" id="fileInput">
+            <button id="uploadButton">Upload</button>
+            <button id="postButton">Post</button>
+        </div>
+        <div class="blog-list">
+            <h2>Blog Posts</h2>
+            <ul id="blogPosts"></ul>
+        </div>
+    </div>
+
+    <!-- Include Firebase SDK scripts (replace with your Firebase config) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <!-- Include your JavaScript code (app.js) hosted externally -->
+    <script src="app.js"></script>
+</body>
+</html>
